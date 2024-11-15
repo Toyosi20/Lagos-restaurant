@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <!--
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 4
+   Coding Challenge 1
+   
+   Author: Ahmed Salaudeen
+   Date: 10/8/2024
+   Filename: reservation.html
+   -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Lagos Flavors</title>
+    <link rel="stylesheet" href="menu_style.css"> 
+    <link rel="stylesheet" href="reservation.css" >
+</head>
+<body>
+    <header>
+        <h1>Lagos Flavors</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>Hours of Operation</h2>
+            <table class="fancy-border">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Open</th>
+                        <th>Close</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>9:00 AM</td>
+                        <td>9:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>8:00 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8:00 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>8:00 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>9:00 AM</td>
+                        <td>11:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9:00 AM</td>
+                        <td>11:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>9:00 AM</td>
+                        <td>11:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>    
+        </div>
+        <div class="reservation-content">
+          <section class="reservations">
+            <h2>Make a Reservation With Us Today!</h2>
+            <form action="submit-reservation.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Reservation Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Reservation Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+
+                <label for="requests">Special Requests:</label>
+                <textarea id="requests" name="requests"></textarea>
+
+                <button type="submit">Submit Reservation</button>
+            </form>
+         </section>
+            <figure class="figure-right">
+                <img src="lagos.jpg" alt="A beautiful setting of Lagos Flavors restaurant">
+                <figcaption>A beautiful setting of Lagos Flavors restaurant</figcaption>
+
+            </figure>
+             <figure class="figure-right">
+                    <img src="alase.jpg" alt="Master chef at Lagos">
+                    <figcaption>Master chef at Lagos</figcaption>
+            </figure>
+        </div>
+
+        <div class="content">
+            <p> We look forward to hosting you!.</p>
+            <p>Phone: 419-222-5419 </p>
+            <p>Location: 87 Naija street, New York</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lagos Flavors. All rights reserved.</p>
+    </footer>
+</body>
+</html>
