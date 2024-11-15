@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 4
+   Coding Challenge 1
+
+   Author: Ahmed Salaudeen
+   Date: 10/8/2024
+
+   Filename: about_style.css
+*/
+
+body {
+    background-image: url(african-restaurant-nyc-phpZyGx5q.png);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    background-image: url("AAC")
+    background-repeat: no-repeat;
+    background-position: left, right; 
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 700px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    margin: 10px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-box {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h4 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #e1e823de;
+}
+
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: fixed;
+}

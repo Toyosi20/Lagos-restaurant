@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 4
+   Coding Challenge 1
+
+   Author: Ahmed Salaudeen
+   Date: 10/8/2024
+
+   Filename: extra_style.css
+*/
+
+/* content_style.css */
+
+.content {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    color: #333; 
+    background-color: #f4f4f4; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+}
+
+.content h2 {
+    color: #5a5a5a; 
+    border-bottom: 2px solid #ddd; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+
+.content p {
+    line-height: 1.6; 
+}
+
+.content a {
+    color: #008cba; 
+    text-decoration: none; 
+}
+
+.content a:hover {
+    text-decoration: underline; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 10px; /* Space between grid items */
+}
+
+

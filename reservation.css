@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 4
+   Coding Challenge 1
+
+   Author: Ahmed Salaudeen
+   Date: 10/8/2024
+
+   Filename: reservation_style.css
+*/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    background-image: url('african-restaurant-nyc13-phpEzWrVF.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left, right; 
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-content {
+display: grid;
+
+}
+
+.content-box {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h4 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #c8d6b2;
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.fancy-border th,
+.fancy-border td {
+    border: 2px solid #4CAF50; /* Fancy border style */
+    padding: 10px;
+    text-align: center;
+}
+
+.fancy-border th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.fancy-border tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.reservation-content {
+    grid-column: 1; 
+}
+
+figure {
+    grid-column: 3;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    z-index: 1000;
+}

@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 4
+   Coding Challenge 1
+
+   Author: Ahmed Salaudeen
+   Date: 10/8/2024
+
+   Filename: my_style.css
+*/
+
+
+body {
+    background-image: url(african-restaurant-nyc10-phpS3s5Zn.png);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color: #0ab021;
+    background-image: url(images.jpg);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Navbar styles */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff; 
+    font-family: 'Cursive', sans-serif; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+    background-color: #ac9022; 
+    box-shadow: 0 0 10px #80690f; 
+    border-radius: 5px; 
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.content-box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu-content {
+    background-image: url('');
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto;
+    max-width: 800px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: relative;
+}
+
+
+.menu-content h2,
+.about-content h2,
+.reservations h2 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+.floating-images img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+}
+
+.float-top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.float-top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.float-bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.float-bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid rgb(16, 96, 8);
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+reservations {
+    background-image: url('african-restaurant-nyc9-phpY2lQWO.png'); /* Adds background image to reservations section */
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
+    margin: 50px auto; /* Center the box */
+    max-width: 600px; /* Set max width of the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
+    padding: 20px; /* Padding inside the section */
+}
+
+.reservations h2 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+.reservations form {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.reservations form label {
+    grid-column: span 2;
+    font-weight: bold;
+}
+
+.reservations form input, .reservations form textarea, .reservations form button {
+    grid-column: span 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reservations form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.reservations form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 0px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
